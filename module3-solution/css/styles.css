@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 16px;
   color: #fff;
@@ -9,23 +13,23 @@ body {
 #header-nav {
   background-color:#8E8A8A;
   border-radius: 0;
-  border: 2;
-   
 }
 
 .navbar-brand {
   padding-top: 25px;
+  border: 2;
+  margin-bottom: 20px;
 }
 
 .navbar-brand h1 {
   font-family: 'Lora', serif;
+  text-align: left;
   color: black;
   font-size: 1.5em;
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   line-height: .75;
-  text-align: center;
 
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -40,11 +44,13 @@ color: black;
 
 #nav-list {          /* For the menu items */
   margin-top: 10px;
+  background-color: white;
 }
 #nav-list a {
   color: black;
   text-align: center;
   font-weight: bold;
+  background-color: white;
 }
 #nav-list a:hover {
   background: #E7E7E7;
@@ -70,59 +76,30 @@ color: black;
 }
 
 #Menu-Content {
-  border: 1px solid #61122f;
-  position: relative;
-  bottom: 5;
-  left: 5;
-  right: 5;
-  top: 25px;
-  width: 96%;
-  text-align: center;
-  font-size: 1.1em;
-  background-color: #808080;
-  color: black;
-  margin-right: 2%;
-  margin-left: 2%;
-  padding: 1%;
-  font-weight: bold;
+  	border: 1px solid #61122f;
+    position: relative;
+    float:left;
+    background-color: #808080;
+    padding: 10px 15px 10px 15px;
+    border:solid;
+    text-align: justify;
+    margin: 10px 10px 10px 10px;
 }
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 
   #nav-list {
-  	margin-top: 0px;
     display: none;
-}
-
- 	#nav-list a {
-    text-align: center;
-    bottom: 20px;
-    padding: 10px;
-}
-	#header-nav {
-	  padding: 20px;
-	  margin-bottom: 20px;
-}
-
+    
+   }
 }
 
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
-   #nav-list {
-  	margin-top: 0px;
+ #nav-list {
     display: none;
-}
-
- 	#nav-list a {
-    text-align: center;
-    bottom: 20px;
-    padding: 10px;
-}
-	#header-nav {
-	  padding: 20px;
-	  margin-bottom: 20px;
 }
 
   /* End Header */
@@ -130,32 +107,28 @@ color: black;
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
-  #nav-list {
-  	margin-top: 0px;
+
+	 #nav-list {
     display: none;
 }
-
+  
  	#nav-list a {
-    text-align: center;
-    bottom: 20px;
-    padding: 10px;
+    padding: 0px;
 }
-	#header-nav {
-	  padding: 20px;
-	  margin-bottom: 20px;
-	}
+
 }
 
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /* Header */
-  #header-nav {
-	  padding: 20px;
-	  margin-bottom: 20px;
-	}
-
-  #collapsable-nav a { /* Collapsed nav menu text */
+  #collapsable-nav a { /*    padding: 10px; margin-right: 5px;Collapsed nav menu text */
     font-size: 1.2em;
-    margin-right: 5px;
+ 	margin-bottom: 0px;
+    background-color: white;
   }
- }
+
+#nav-list  {
+	margin-top: 0px;
+  	margin-bottom: 0px;
+  } 
+}
