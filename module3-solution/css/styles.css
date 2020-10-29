@@ -1,0 +1,161 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: white;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color:#8E8A8A;
+  border-radius: 0;
+  border: 2;
+   
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+  text-align: center;
+
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+}
+.navbar-brand a {
+color: black;
+  font-weight: bold;
+}
+
+#nav-list {          /* For the menu items */
+  margin-top: 10px;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+/* Gives color style to the collapse button */
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+.text-center {
+  position: relative;
+  bottom: 10;
+  right: 0;
+  width: 100%;
+  font-size: 1.8em;
+  color: black;
+  font-weight: bold;
+}
+
+#Menu-Content {
+  border: 1px solid #61122f;
+  position: relative;
+  bottom: 5;
+  left: 5;
+  right: 5;
+  top: 25px;
+  width: 96%;
+  text-align: center;
+  font-size: 1.1em;
+  background-color: #808080;
+  color: black;
+  margin-right: 2%;
+  margin-left: 2%;
+  padding: 1%;
+  font-weight: bold;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+  #nav-list {
+  	margin-top: 0px;
+    display: none;
+}
+
+ 	#nav-list a {
+    text-align: center;
+    bottom: 20px;
+    padding: 10px;
+}
+	#header-nav {
+	  padding: 20px;
+	  margin-bottom: 20px;
+}
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+   #nav-list {
+  	margin-top: 0px;
+    display: none;
+}
+
+ 	#nav-list a {
+    text-align: center;
+    bottom: 20px;
+    padding: 10px;
+}
+	#header-nav {
+	  padding: 20px;
+	  margin-bottom: 20px;
+}
+
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #nav-list {
+  	margin-top: 0px;
+    display: none;
+}
+
+ 	#nav-list a {
+    text-align: center;
+    bottom: 20px;
+    padding: 10px;
+}
+	#header-nav {
+	  padding: 20px;
+	  margin-bottom: 20px;
+	}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  #header-nav {
+	  padding: 20px;
+	  margin-bottom: 20px;
+	}
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    margin-right: 5px;
+  }
+ }
